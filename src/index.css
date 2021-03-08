@@ -70,6 +70,7 @@ ul {
 }
 a {
   text-decoration: none;
+  color: var(--clr-white);
 }
 h1,
 h2,
@@ -93,7 +94,7 @@ h4 {
   font-size: 0.875rem;
 }
 p {
-  margin-bottom: 1.25rem;
+  /* margin-bottom: 1.25rem; */
   color: var(--clr-grey-5);
 }
 @media screen and (min-width: 800px) {
@@ -139,11 +140,45 @@ p {
 Reviews
 ===============
 */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #1d976c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #93f9b9,
+    #1d976c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6de298,
+    #198d65
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+nav p {
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+@media screen and (min-width: 900px) {
+  nav p {
+    font-size: 1.5rem;
+  }
+}
+
+nav a {
+  color: var(--clr-white);
+  margin: 0 10px;
+}
+
 main {
   min-height: 100vh;
   display: grid;
   place-items: center;
-  margin: auto;
+  margin: -100px auto 0;
 }
 .title {
   text-align: center;
@@ -159,6 +194,10 @@ main {
 .container {
   width: 80vw;
   max-width: var(--fixed-width);
+}
+
+.container-md {
+  max-width: var(--max-width);
 }
 
 img {
@@ -227,6 +266,31 @@ img {
 .info {
   margin-bottom: 0.75rem;
 }
+
+.btn {
+  background: var(--clr-primary-5);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius);
+  text-transform: capitalize;
+  color: var(--clr-white);
+  letter-spacing: var(--spacing);
+  border-color: transparent;
+  cursor: pointer;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--clr-primary-4);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
 .prev-btn,
 .next-btn {
   color: var(--clr-primary-7);
@@ -242,7 +306,6 @@ img {
   color: var(--clr-primary-5);
 }
 .random-btn {
-  margin-top: 0.5rem;
   background: var(--clr-primary-10);
   color: var(--clr-primary-5);
   padding: 0.25rem 0.5rem;

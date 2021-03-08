@@ -1,7 +1,14 @@
-# React Starter Template
+# React Reviews Web App 💻
 
-A template to start coding in React without all the extra fluff from the "create-react-app" starter project.
+[🔥 View it live here 🔥](https://react-reviews-ljfiv.netlify.app/)
 
-Also includes some starter CSS to quickly throw together simple MVPs.
+React web app component to display customer reviews ⚛️
 
-Clone and start coding in React today.
+Features include:
+
+- Routing with React Router
+  - Error handling for invalid pages
+- Hooks (useState and useEffect)
+- Icons from React Icons / Font Awesome
+
+[![](https://github.com/louisiaegerv/Project-Images/blob/master/React-reviews-image.png?raw=true)](https://react-reviews-ljfiv.netlify.app)
